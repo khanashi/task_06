@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+
+    <title>OLMS</title>
+
+</head>
+<body>
+    <header>
+        <div class="head">
+        <h1>OLMS</h1>
+    </div>
+    </header>
+    <div class="container">
+        <div class="book-list">
+            <h2>Book List</h2>
+            <ol>
+                <li>Hacking:..............</li>
+                <li>programing:....................</li>
+                <li>introduction to network:..........</li>
+                <li>Numarical Analysis:..............</li>
+                <li>Java Script:...............</li>
+                <li>C++:................</li>
+            </ol>
+        </div>
+        <div class="add-book">
+            <h2>Add New Book</h2><br>
+            <h5>Auther:</h5>
+            <label for="auther" style="background-color:rgb(172, 209, 221,) ;"></label>
+            <input type="text" style="background-color: rgb(172, 209, 221); border-radius: 30px;" name="auther" placeholder="auther"><br>
+            <h5>Title:</h5>
+            <label for="title"></label>
+            <input type="text" style="background-color: rgb(172, 209, 221); border-radius: 30px;" name="title" placeholder="title"><br>
+            <h5>ISBN:</h5>
+            <label for="ISBN"></label>
+            <input type="text" name="ISBN" style="background-color: rgb(172, 209, 221); border-radius: 30px;" placeholder="ISBN"><br><br>
+
+            <button onclick="addBook()" >Add Book</button>
+            
+        </div>
+        <div class="search">
+            <h2>Search for Books</h2>
+            <input type="text" id="searchInput" placeholder="Enter title or author" style="background-color: rgb(172, 209, 221); border-radius: 30px;"><br><br>
+            <button onclick="searchBooks()">Search</button>
+            <div id="searchResults"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
